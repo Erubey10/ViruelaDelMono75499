@@ -1,0 +1,27 @@
+{
+  "name": "virueladelmono_75499",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erubey10/ViruelaDelMono75499.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erubey10/ViruelaDelMono75499/issues"
+  },
+  "homepage": "https://github.com/Erubey10/ViruelaDelMono75499#readme",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.4",
+    "mongoose": "^8.6.2",
+    "mongose": "^0.0.2-security",
+    "typescript": "^5.6.2"
+  }
+}
