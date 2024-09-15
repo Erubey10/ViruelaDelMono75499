@@ -4,8 +4,10 @@ import { mongo } from 'mongoose';
 import { MongoDatabase } from './data/init';
 //import { IncidentModel } from './data/models/incident.model';
 import { AppRoutes } from './presentation/routes';
-//import { emailJob } from './domain/jobs/email.job';
+import { emailJob } from './correo/job/job';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
 
 app.use(express.json());
@@ -31,5 +33,5 @@ console.log(process.env.PORT);
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
- //   emailJob();
+    emailJob();
 });

@@ -7,11 +7,12 @@ export class CaseRoutes{
     static get routes(): Router{
         const router = Router();
         const caseController = new CaseController();
-        router.get("/", caseController.getIncidents);
+        router.get("/", caseController.getCases);
         router.post("/", caseController.createCase);
-        router.get("/:id", caseController.getIncidentById);
-        router.put("/:id", caseController.updateIncident);
-        router.delete("/:id", caseController.deleteIncident);
+        router.get("/week", caseController.getLastWeekCases);
+        router.get("/:id", caseController.getCaseById);
+        router.put("/:id", caseController.updateCase);
+        router.delete("/:id", caseController.deleteCase);
         return router;
     }
 }
